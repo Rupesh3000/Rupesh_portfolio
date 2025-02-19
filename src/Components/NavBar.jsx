@@ -21,7 +21,7 @@ const NavBar = () => {
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 w-full flex items-center justify-center px-8 py-4 backdrop-blur-md bg-opacity-70 bg-gradient-to-r from-indigo-900 via-purple-900 to-black shadow-md gap-3 z-4"
+      className="fixed top-0 left-0 w-full flex items-center justify-center px-8 py-4 backdrop-blur-md bg-opacity-70 bg-gradient-to-r from-indigo-900 via-purple-900 to-black shadow-md gap-3 z-4 md:block sm:block"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: hidden ? -100 : 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}

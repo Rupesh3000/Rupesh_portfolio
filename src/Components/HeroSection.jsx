@@ -18,25 +18,25 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import HeroIMg from "../assest/Hero_img.svg";
 
-
 const HeroSection = () => {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex justify-center p-8 lg:flex-row md:flex-col-reverse items-center"
-    >
+    <section id="home" className="min-h-screen">
       {/* Left Section */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="w-[50%] text-left md:text-left space-y-4 bg-zinc-500"
+        className="right-left w-[50%] text-left md:text-left space-y-4"
       >
-        <p className="text-lg text-zinc-200">Welcome to my portfolio</p>
-        <h1 className="text-4xl md:text-6xl font-bold text-white">
-          Hi! I'm Rupesh 
+        {/* 1c182d */}
+        <p className="text-lg text-zinc-200 border-2 border-solid px-3.5 py-2.5 w-fit rounded-2xl mb-3">
+          Welcome to my portfolio
+        </p>
+
+        <h1 className="text-5xl md:text-6xl font-bold text-white">
+          Hi! I'm Rupesh
         </h1>
-        <p className="text-zinc-300 mt-4 pr-9">
+        <p className="text-zinc-300 mt-4 pr-16">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id minus
           tenetur amet! Incidunt consequuntur rerum molestias eligendi dolore?
           Asperiores recusandae impedit amet animi illum autem laudantium,
@@ -57,12 +57,12 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className=" flex justify-center items-center  bg-black"
+        className=" flex justify-center items-center"
       >
         <motion.img
           src={HeroIMg}
           alt="Hero"
-          className="w-96 h-auto "
+          className="w-md h-auto "
           whileHover={{ scale: 1.1, rotate: 2 }}
           transition={{ type: "spring", stiffness: 200 }}
         />
