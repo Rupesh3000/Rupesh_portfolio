@@ -1,11 +1,19 @@
-import React from 'react'
+import { motion } from "framer-motion";
+import NavBar from "./Components/NavBar";
+import HeroSection from "./Components/HeroSection";
+import Banner from './assets/banner-bg.png'
 
-const App = () => {
+function App() {
   return (
-    <div className='h-screen bg-black'>
-      <h1 className='text-center text-2xl text-white md:text-red-700 md:text-3xl'>Now this should be wrok</h1>
+    <div className="relative min-h-screen w-full overflow-hidden">
+      {/* Content Container */}
+      <img src={Banner} alt="" className="" />
+      <div className="absolute container mx-auto px-4 sm:px-6 lg:px-8 top-0 left-0 ">
+        <NavBar />
+        <HeroSection />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
