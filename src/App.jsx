@@ -1,18 +1,36 @@
 import { motion } from "framer-motion";
 import NavBar from "./Components/NavBar";
 import HeroSection from "./Components/HeroSection";
-import Banner from './assets/banner-bg.png'
+import Banner from "./assets/banner-bg.png";
+import AnimatedBackground from "./Components/AnimatedBackground";
+import About from "./Components/About";
 
 function App() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
-      {/* Content Container */}
-      <img src={Banner} alt="" className="" />
-      <div className="absolute container mx-auto px-4 sm:px-6 lg:px-8 top-0 left-0 ">
-        <NavBar />
-        <HeroSection />
+    <>
+      <AnimatedBackground/>
+      <div className="wrapper w-full bg-[#121212]">
+        <img
+          src={Banner}
+          alt="Home Banner"
+          className="w-full object-cover min-h-screen"
+        />
+        <main className="absolute top-0 w-full">
+          <div className="container max-w-[80rem] text-white mx-auto">
+            <NavBar />
+            <HeroSection />
+            <About/>
+          </div>
+
+          {/* <div className=" bg-black min-h-screen rounded-tl-[50px] rounded-tr-[50px]">
+            <div className="container max-w-[80rem] text-white mx-auto">
+              <About />
+            </div>
+           
+          </div> */}
+        </main>
       </div>
-    </div>
+    </>
   );
 }
 
