@@ -8,18 +8,18 @@ import About from "./Components/About";
 function App() {
   return (
     <>
-      <AnimatedBackground/>
-      <div className="wrapper w-full bg-[#121212]">
-        <img
+      <div className="wrapper w-full bg-black">
+        {/* <img
           src={Banner}
           alt="Home Banner"
-          className="w-full object-cover min-h-screen"
-        />
-        <main className="absolute top-0 w-full">
+          className="w-full object-cover min-h-screen  absolute"
+          /> */}
+        {/* <AnimatedBackground /> */}
+        <main className=" w-full ">
           <div className="container max-w-[80rem] text-white mx-auto">
-            <NavBar />
-            <HeroSection />
-            <About/>
+            {/* <NavBar /> */}
+            {/* <HeroSection /> */}
+            <About />
           </div>
 
           {/* <div className=" bg-black min-h-screen rounded-tl-[50px] rounded-tr-[50px]">

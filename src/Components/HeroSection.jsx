@@ -74,7 +74,7 @@ const HeroSection = () => {
       <motion.div
         // initial={{ opacity: 0, y: 50 }}
         // animate={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="mt-8 md:mt-0 flex justify-center"
       >
         <motion.img
