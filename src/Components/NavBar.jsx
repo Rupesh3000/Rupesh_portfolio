@@ -33,7 +33,7 @@ const NavBar = () => {
           
         </div>
         <ul className="flex gap-5 text-xl">
-          {["Home", "About", "Projects", "Contact"].map((link) => (
+          {["Home", "About", "Portfolio", "Contact"].map((link) => (
             <motion.li
               key={link}
               whileHover={{ scale: 1.1 }}
