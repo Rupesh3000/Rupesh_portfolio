@@ -1,22 +1,8 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
+import TechStack from "../Components/TechStack";
 
 const Portfolio = () => {
-  const techStacks = [
-    { icon: "html.svg", language: "HTML" },
-    { icon: "css.svg", language: "CSS" },
-    { icon: "javascript.svg", language: "JavaScript" },
-    { icon: "tailwind.svg", language: "Tailwind CSS" },
-    { icon: "reactjs.svg", language: "ReactJS" },
-    { icon: "vite.svg", language: "Vite" },
-    { icon: "nodejs.svg", language: "Node JS" },
-    { icon: "bootstrap.svg", language: "Bootstrap" },
-    { icon: "firebase.svg", language: "Firebase" },
-    { icon: "MUI.svg", language: "Material UI" },
-    { icon: "vercel.svg", language: "Vercel" },
-    { icon: "SweetAlert.svg", language: "SweetAlert2" },
-  ];
-
   const projects = [
     {
       image: "/project1.jpg",
@@ -40,7 +26,7 @@ const Portfolio = () => {
         <h2 class="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
           {/* <span style="color: rgb(99, 102, 241); background-image: linear-gradient(45deg, rgb(99, 102, 241) 10%, rgb(168, 85, 247) 93%); background-clip: text; -webkit-text-fill-color: transparent;">
           </span> */}
-         {techStacks.icon}
+        Portfolio Showcase
         </h2>
         <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">
           Explore my journey through projects, certifications, and technical
@@ -49,7 +35,7 @@ const Portfolio = () => {
         </p>
       </div>
 
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <ProjectCard
@@ -62,7 +48,9 @@ const Portfolio = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
+
+      <TechStack />
     </section>
   );
 };
