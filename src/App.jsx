@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import NavBar from "./Components/NavBar";
 import HeroSection from "./Pages/HeroSection";
-import Banner from "/assets/banner-bg.png";
+import Banner from "./assets/banner-bg.png";
 import AnimatedBackground from "./Components/AnimatedBackground";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Portfolio";
