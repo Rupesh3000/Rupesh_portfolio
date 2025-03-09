@@ -9,7 +9,7 @@ import Portfolio from "./Pages/Portfolio";
 function App() {
   return (
     <>
-      <div className="wrapper w-full bg-black">
+      <div className="wrapper w-full bg-[#090925]">
         {/* <img
           src={Banner}
           alt="Home Banner"
@@ -18,10 +18,10 @@ function App() {
         {/* <AnimatedBackground /> */}
         <main className=" w-full ">
           <div className="container max-w-[80rem] text-white mx-auto">
-            {/* <NavBar /> */}
-            {/* <HeroSection /> */}
-            {/* <About /> */}
-            <Portfolio />
+            {/* <NavBar />
+            <HeroSection />
+            <About />
+            <Portfolio /> */}
           </div>
 
           {/* <div className=" bg-black min-h-screen rounded-tl-[50px] rounded-tr-[50px]">

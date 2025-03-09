@@ -31,7 +31,7 @@ function TechStack() {
     { name: "Motion", image: framer_motion, style: "object-cover" },
     { name: "Firebase", image: firebase },
     { name: "Vercel", image: vercel },
-    { name: "Swiper", image: Swiper ,style:"object-cover"},
+    { name: "Swiper", image: Swiper, style: "object-cover" },
     { name: "Vite", image: vite },
     { name: "SweetAlrt2", image: sweet },
     // { name: "GSAP", image: gsap },
@@ -39,30 +39,27 @@ function TechStack() {
   ];
 
   return (
-    <section className="tech-stack py-8 bg-[#1A1A2E] text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold mb-6 text-center">Tech Stack</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-5">
-          {techs.map((tech, index) => (
-            <div>
-              <div className="group p-6 rounded-2xl bg-slate-800/50 hover:bg-slate-700/50 transition-all duration-300 ease-in-out flex flex-col items-center justify-center gap-3 hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl">
-                <div className="relative">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-0 group-hover:opacity-50 blur transition duration-300"></div>
-                  <img
-                    src={tech.image}
-                    alt=""
-                    className={`relative h-16 w-16 md:h-20 md:w-20 transform transition-transform duration-300 ${tech.style}`}
-                  />
-                </div>
-                <span className="text-slate-300 font-semibold text-sm md:text-base tracking-wide group-hover:text-white transition-colors duration-300">
-                  {tech.name}
-                </span>
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-5">
+        {techs.map((tech, index) => (
+          <div>
+            <div className="group p-6 rounded-2xl bg-slate-800/50 hover:bg-slate-700/50 transition-all duration-300 ease-in-out flex flex-col items-center justify-center gap-3 hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl">
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-0 group-hover:opacity-50 blur transition duration-300"></div>
+                <img
+                  src={tech.image}
+                  alt=""
+                  className={`relative h-16 w-16 md:h-20 md:w-20 transform transition-transform duration-300 ${tech.style}`}
+                />
               </div>
+              <span className="text-slate-300 font-semibold text-sm md:text-base tracking-wide group-hover:text-white transition-colors duration-300">
+                {tech.name}
+              </span>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }
 
