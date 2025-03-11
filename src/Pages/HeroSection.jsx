@@ -10,9 +10,9 @@ const HeroSection = () => {
     >
       {/* Left Section */}
       <motion.div
-        // initial={{ opacity: 0, x: -50 }}
-        // animate={{ opacity: 1, x: 0 }}
-        // transition={{ duration: 1, ease: "easeOut" }}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="md:w-1/2  md:text-left space-y-4"
       >
         <p className="text-sm text-zinc-200 py-1.5 px-2 border border-white w-fit rounded-lg">
@@ -31,8 +31,8 @@ const HeroSection = () => {
             <motion.li
               key={link}
               className="bg-gray-400/10 py-1.5 px-2.5 rounded-3xl backdrop-blur-xl text-white mt-2 cursor-pointer hover:shadow-indigo-500/50 hover:shadow-[0_0_12px_4px]"
-              // whileHover={{ scale: 1.05 }}
-              // transition={{ type: "spring", stiffness: 300 }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
             >
               {link}
             </motion.li>
@@ -72,8 +72,8 @@ const HeroSection = () => {
 
       {/* Right side img  */}
       <motion.div
-        // initial={{ opacity: 0, y: 50 }}
-        // animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="mt-8 md:mt-0 flex justify-center"
       >
@@ -81,8 +81,8 @@ const HeroSection = () => {
           src={headerImg}
           alt="Hero"
           className="w-96"
-          // whileHover={{ scale: 1.1, rotate: 2 }}
-          // transition={{ type: "spring", stiffness: 200 }}
+          whileHover={{ scale: 1.1, rotate: 2 }}
+          transition={{ type: "spring", stiffness: 200 }}
         />
       </motion.div>
     </section>
